@@ -556,7 +556,7 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   padding: 128px 40px 60px 40px;
-  min-height: calc(100vh - 100px);
+  /* min-height: calc(100vh - 100px); */
   /* 防止项目数量不够一屏高度时 footer 上移 */
 }
 
@@ -1059,7 +1059,7 @@ img {
   justify-content: center;
   align-items: center;
   --mw: 968px;
-  padding: 128px 40px 60px 40px;
+  padding: 0 40px 60px 40px;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -1128,6 +1128,21 @@ img {
   transition: color .2s;
 }
 
+.work .work-title {
+  width: 100%;
+  max-width: var(--mw);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 32px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #E8E8F6 0%, rgba(232, 232, 246, 0.72) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
 .work .card-list {
   width: 100%;
   max-width: var(--mw);
