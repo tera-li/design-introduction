@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" style="color-scheme: dark;">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,56 +9,61 @@
 </head>
 <body>
     <canvas class="fireworks"></canvas>
-    <div class="head">
+    <div class="head" id="headscrollbg">
         <div class="main">
-            <a href="./index.html" class="logo"><img src="./assets/public/logo_text.svg"></a>
-            <div class="menu">
+            <div class="main-left">
+                <a href="./index.html" class="logo"><img src="./assets/public/logo_graph.svg"></a>
+                <div class="tag tag-cooperate" onclick="window.location.href='./about.html'">
+                    <div class="breath-dot"></div>Contact
+                </div>
+            </div>
+            <div class="menu" id="main-menu">
                 <li class="magical btn" onclick="window.location.href='./index.html'">Home</li>
-                <li class="magical btn" onclick="window.location.href='./work.html'">Work</li>
+                <!-- <li class="magical btn" onclick="window.location.href='./work.html'">Work</li>
+                <li class="magical btn" onclick="window.location.href='./tool.html'">Tool</li>
                 <li class="magical btn" onclick="window.location.href='./blog.html'">Blog</li>
+                <li class="magical btn" onclick="window.location.href='./book.html'">Book</li> -->
                 <li class="magical btn nav" onclick="window.location.href='./about.html'">About</li>
             </div>
             <div class="menu" id="menu-expand">
-                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+                <li class="magical btn menu-expand-btn" id="menu-expand-child"><i class="icon menu-icon"></i></li>
             </div>
             <div id="menu-panel">
-                <div class="menu-panel-content">
-                    <li class="magical btn" onclick="window.location.href='./index.html'">Home</li>
-                    <li class="magical btn" onclick="window.location.href='./work.html'">Work</li>
-                    <li class="magical btn" onclick="window.location.href='./blog.html'">Blog</li>
-                    <li class="magical btn nav" onclick="window.location.href='./about.html'">About</li>
+                <div class="menu-panel-content" id="menu-panel-content"></div>
+                <div class="menu-close-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path></svg>
                 </div>
             </div>
         </div>
-        <blockquote><img src="./assets/public/logo.svg"></blockquote>
     </div>
     <div class="about">
         <div class="about-top">
-            <div class="about-name">Name</div>
+            <div class="about-name text-effect">黄丽</div>
             <div class="about-info">
-                <div class="about-info-left">
-                    <div class="about-info-title">Introduce</div>
+                <div class="about-info-left load-pro">
+                    <div class="about-info-title">个人介绍</div>
                     <div class="introduce-desc">
-                        I am currently a product designer, junior developer, and aspire to become a design engineer. Having insights and practical experience in multiple industries such as cloud computing, low code, e-commerce, intelligent customer service, and zero trust.<br><br>
-                        I am passionate about the infinite possibilities of technology and also focused on exploring the values of product design, seeking a balance between ultimate design, interaction, technological inclusion, and business understanding to solve problems.<br><br>
-                        In addition, I have won three patents for appearance invention, which can be found in the <a href="http://epub.cnipa.gov.cn/" target="_blank">China National Intellectual Property Administration ↗</a> Enter my name on the official website to search.
+                        大家好，我是黄丽，一名 27 岁的女生。
+                        拥有 6 年UI工作经验，并立志成为一名全链路UI设计工程师。擅长从0到1构建高转化率的数字产品界面，主导过20+涵盖电商、教育、文旅行业的B端/C端项目。<br><br>
+                        我熟练运用用户研究、交互原型、视觉设计及设计系统搭建全流程。我对技术的无限可能性充满热情，同时也专注于探索产品设计的价值，在终极设计、交互技术包容性和商业理解之间寻求平衡，以解决问题<br><br>
+                        我的性格开朗且富有亲和力，善于以正向视角应对挑战，能快速融入新环境并建立良好协作关系‌。面对高强度工作时保持抗压能力，通过主动沟通化解矛盾，保障团队目标高效推进。<br><br>
                     </div>
                 </div>
-                <div class="about-info-right">
-                    <div class="contact">
-                        <div class="about-info-title">Contact</div>
+                <div class="about-info-right load-pro">
+                    <div class="联系我">
+                        <div class="about-info-title">联系我</div>
                         <div class="contact-desc">
                             <div class="list">
-                                <div class="list-label">Email：</div>
+                                <div class="list-label">邮箱：</div>
                                 <div href="javascript:" class="list-value" id="email" tabindex="0" role="button"  title="点击复制邮箱">
-                                    <a id="emailCopied">hi@asorn.cn</a>
+                                    <a id="emailCopied">huangli_ui@163.com</a>
                                 </div>
-                                <span class="list-value copied">copied&nbsp;✓</span>
+                                <span class="list-value copied">Copied&nbsp;✓</span>
                             </div>
                             <div class="list">
-                                <div class="list-label">Wechat：</div>
+                                <div class="list-label">手机：</div>
                                 <div class="list-value">
-                                    <a class="tooltip">imasorn
+                                    <a class="tooltip">18183315036
                                         <div class="tooltip-box">
                                             <img src="./assets/about/wechat.png">
                                         </div>
@@ -68,28 +73,28 @@
                         </div>
                     </div>
                     <div class="resume">
-                        <div class="about-info-title resume-title">Resume</div>
+                        <div class="about-info-title resume-title">简历</div>
                         <div class="resume-desc">
-                            <div class="resume-desc-helptext">Download my resume (PDF & 1MB)</div>
-                            <div class="magical resume-btn"><a href="https://asorn.cn/" target="_blank">Download</a></div>
+                            <div class="resume-desc-helptext">下载简历 (PDF & 1MB)</div>
+                            <div class="magical primary-btn btn-s"><a href="https://asorn.cn/" target="_blank">下载</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="about-middle">
+        <div class="about-middle load-pro">
             <div class="power">
                 <div class="list-00">
                     <div class="magical power-card-number">
                         <a>
-                            <div class="card-title">7</div>
-                            <div class="card-text">Work</div>
+                            <div class="card-title">6</div>
+                            <div class="card-text">工作经验</div>
                         </a>
                     </div>
                     <div class="magical power-card-number">
                         <a>
-                            <div class="card-title">60⁺</div>
-                            <div class="card-text">Project</div>
+                            <div class="card-title">20⁺</div>
+                            <div class="card-text">项目</div>
                         </a>
                     </div>
                     <div class="magical power-card-number">
@@ -108,13 +113,25 @@
                 <div class="list-01">
                     <div class="magical power-card">
                         <a>
-                            <div class="card-img" style="background-image: url('./assets/about/abstract.svg')"></div>
-                            <div class="card-text">My abilities</div>
+                            <div class="card-img" style="background-image: url('./assets/about/menu.svg')"></div>
+                            <div class="card-text">本科</div>
                         </a>
                     </div>
                     <div class="magical power-card">
                         <a>
-                            <div class="card-img" style="background-image: url('./assets/about/menu.svg')"></div>
+                            <div class="card-img" style="background-image: url('./assets/about/pen.svg')"></div>
+                            <div class="card-text">西华大学</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/pin.svg')"></div>
+                            <div class="card-text">产品设计</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/abstract.svg')"></div>
                             <div class="card-text">My abilities</div>
                         </a>
                     </div>
@@ -124,90 +141,133 @@
                             <div class="card-text">My abilities</div>
                         </a>
                     </div>
-                    <div class="magical power-card">
-                        <a>
-                            <div class="card-img" style="background-image: url('./assets/about/pin.svg')"></div>
-                            <div class="card-text">My abilities</div>
-                        </a>
-                    </div>
-                    <div class="magical power-card">
-                        <a>
-                            <div class="card-img" style="background-image: url('./assets/about/pen.svg')"></div>
-                            <div class="card-text">My abilities</div>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="about-bottom">
+        <div class="about-bottom load-pro">
             <div class="experience">
-                <div class="item">
-                    <div class="time">❖ 2023.10 ~ Now</div>
+                <div class="item load-pro">
+                    <div class="time">❖ 2024.6 ~ 2025.1</div>
                     <div class="name">
-                        <div class="company"><a href="https://asorn.cn/" target="_blank">Company One ↗</a></div>
-                        <div class="job">UI Designer</div>
-                    </div>
-                    <div class="project-experience">
-                        <div class="item">
-                            <div class="title">Project Title</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>App, Web, H5, Mini Program, Backend Design, Design Asset Building, Axure Interaction Design, Enterprise VI Design, etc. Welcome to consult</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="time">❖ 2019.08 ~ 2023.08</div>
-                    <div class="name">
-                        <div class="company"><a href="https://asorn.cn/" target="_blank">Company Two ↗</a></div>
+                        <div class="company"><a href="https://asorn.cn/" target="_blank">四川众辰星光科技有限公司 ↗</a></div>
                         <div class="job">Product Designer</div>
                     </div>
                     <div class="project-experience">
-                        <div class="item">
-                            <div class="title">Project Title One</div>
+                        <div class="item load-pro">
+                            <div class="title">病友圈平台</div>
                             <div class="desc">
                                 <ul>
-                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements;</li>
-                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements;</li>
-                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="title">Project Title Two</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements;</li>
-                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="title">Project Title Three</div>
-                            <div class="desc">
-                                <ul>
-                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements;</li>
-                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements.</li>
+                                    <li>项目描述：<br>
+                                        病友圈是一款专为患者打造的线上交流平台和医疗评价中心，包含app、web 端、小程序，旨在为患者提供一个安全、开放的交流
+                                        平台，帮助他们分享治疗过程中的经验、心得以及情感支持。该应用集交流、互助、评价于一体，立志打造医疗
+                                        界的“大众点评”。
+                                       </li>
+                                    
+                                        <li>主要成就：<br>  
+                                            • 负责公司核心业务病友圈产品的迭代设计，面向广大医疗患者用户群体。<br>
+                                            • 独立完成病友圈 app、小程序、web 端的交互设计工作，打造令人满意的用户体验。<br>
+                                            • 协作运营推广部门在 8 个月内共推进 3 个项目落地，迭代 10+个版本，带来用户 1w+。</li>
+                                          
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="time">❖ 2016.05 ~ 2019.06</div>
+                <div class="item load-pro">
+                    <div class="time">❖ 2020.9 ~ 2024.1</div>
                     <div class="name">
-                        <div class="company"><a href="https://asorn.cn/" target="_blank">Company Three ↗</a></div>
-                        <div class="job">UI Designer</div>
+                        <div class="company"><a href="https://asorn.cn/" target="_blank">成都矢量科技有限公司 ↗</a></div>
+                        <div class="job">Product Designer</div>
                     </div>
                     <div class="project-experience">
-                        <div class="item">
+                        <div class="item load-pro">
+                            <div class="title">网络靶场攻防竞技平台-B端</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>项目描述：<br>该平台用于校企单位内学生的 CTF、HW 的日常训练，以及竞赛。是为了提升选手网络攻防技能，利
+                                        于就业或参加各类攻防大赛的能力。
+                                       </li>
+                                    <li>
+                                            主要成就：<br>
+                                            • 参加用户调研，走访调查校企单位内的 100 名学生，深入了解用户对网络攻防平台的期望和需求。<br>
+                                            • 针对用户需求和市场趋势，设计出了一套创新且独特的界面设计方案，为用户带来全新的视觉体验。<br>
+                                            • 接任后续产品工作，跟进项目进度，与开发团队紧密合作，确保界面与功能的顺畅实现，保证项目成功上线。<br>
+                                            • 编写产品使用手册，向用户提供详细的操作指南和使用说明，帮助他们正确、高效地使用产品。<br>
+                                            • 项目上线后，用户界面满意度提升了 30%。平均每月有 1000 多名学生参与训练和竞赛。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item load-pro">
+                            <div class="title">钢轨位移检测系统-B端</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>项目描述：用于监测铁路轨道状况的重要工具。该系统通过传感器和图像识别技术收集数据，帮助铁路运营单位
+                                        及时发现和解决轨道和车辆的安全问题，确保铁路运输的安全和顺畅。</li>
+                                    <li>主要成就：
+                                        • 主导从 0 到 1 的 B 端用户界面设计，以提供直观、易用的数据展示和操作体验。
+                                        • 独立完成设计数据可视化方案，以清晰展示轨道检测数据，并支持用户进行数据分析和决策。
+                                        • 负责制定设计规范，优化并维护 10+种设计组件。
+                                        • 与开发团队合作，走查验收，确保设计的准确实现和在不同设备上的良好展示。
+                                        • 测试阶段，协助进行钢轨位移数据验证，并通过 99%的数据准确度，验证设计的有效性。
+                                        • 设计的用户界面简洁清晰，易于导航和使用，提高了用户对于轨道检测数据的理解和分析能力。
+                                        • 带领 ui 小组成员，共花费了 4 个月成功完成项目 v1.0 开发。</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item load-pro">
                             <div class="title">Project Title</div>
                             <div class="desc">
                                 <ul>
-                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements;</li>
-                                    <li>This is a project description that can introduce one's project achievements, project experience, and achievements.</li>
+                                    <li>App, Web, H5, Mini Program, Backend Design, <span>Design </span>Asset Building, Axure Interaction Design, Enterprise VI Design, etc. Welcome to consult.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item load-pro">
+                    <div class="time">❖ 2020.2 ~ 2020.6</div>
+                    <div class="name">
+                        <div class="company"><a href="https://asorn.cn/" target="_blank">成都智菲科技有限公司 ↗</a></div>
+                        <div class="job">Product Designer</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item load-pro">
+                            <div class="title">卫士通云安全服务平台-B端</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>项目描述：<br>云安全服务平台是以给云上租户提供安全服务为中心，针对云上租户的安全问题提供一体化安全解决
+                                        方案服务包。</li>
+                                     <li>主要成就：<br>
+                                        • 与产品团队紧密合作，深入理解平台的业务需求和用户期望。<br>
+                                        • 设计并优化用户界面，以提供直观、易用的云安全服务体验。<br>
+                                        • 设计并实施主页、安全服务列表、服务详情页、管理控制台等关键页面，确保用户能够轻松了解各项安全服务，
+                                        并管理其云环境安全性。<br>
+                                        • 设计并优化报告和警报功能，每月平均报告查看量增加了 30%。<br>
+                                        • 警报功能设计使用户能够及时了解其云环境的安全状况，提高了用户对于安全风险的识别和响应能力。警报响
+                                        应速度提升了 50%。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item load-pro">
+                    <div class="time">❖ 2018.12 ~ 2019.12</div>
+                    <div class="name">
+                        <div class="company"><a href="https://asorn.cn/" target="_blank">成都优卡信息科技有限公司 ↗</a></div>
+                        <div class="job">Product Designer</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item load-pro">
+                            <div class="title">有信钱包-c端</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>项目描述：<br>有信钱包是金融综合服务平台，专业借贷 app，一站式满足用户线上借贷、征信检测等相关服务。</li>
+                                     <li>主要成就：
+                                        • 优化用户界面，包括用户登录、注册、贷款产品展示、申请表单等。确保用户体验和视觉设计的一致性。<br>
+                                        • 通过用户测试和反馈收集，持续改进和优化设计，提高用户满意度和应用使用率。<br>
+                                        • 设计的用户界面简洁清晰，通过用户反馈，应用的平均用户评分从 3.9 提升到了 4.4。<br>
+                                        • 优化的交互设计和导航结构，降低了用户的操作复杂度，提高了申请转化率。<br>
+                                        • 贷款申请流程的简化和优化，缩短了 30%的处理时间，提高了客户信任度和满意度。</li>
                                 </ul>
                             </div>
                         </div>
@@ -217,15 +277,18 @@
         </div>
     </div>
     <div class="footer">
-        <div class="copyright">
-            <div>© 2023 Design by <a href="https://asorn.cn/" target="_blank">Asorn</a></div>
-            <span>|</span>
-            <div class="fillings">
-                <a href="https://asorn.cn/" target="_blank">Asorn</a>
+        <div class="footer-content">
+            <div class="copyright">
+                <div>© 2025 Design by <a href="https://asorn.cn/" target="_blank">Asorn</a></div>
+                <span>|</span>
+                <div class="fillings">
+                    <a href="https://asorn.cn/" target="_blank">Your filing number</a>
+                </div>
             </div>
-            <span>|</span>
             <div class="friends">
                 <a href="https://zdo.fun/" target="_blank">ZDO</a>
+                <a href="https://larkmap.com/" target="_blank">Larkmap</a>
+                <a href="https://qingicon.com/" target="_blank">QingIcon</a>
             </div>
         </div>
     </div>
@@ -240,6 +303,7 @@
         </div>
         <div class="shape-earth"></div>
     </div>
+    <div class="widget-top"></div>
 </body>
 <script src="./js/main.min.js"></script>
 <script src='./js/anime.js'></script>
